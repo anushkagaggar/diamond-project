@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "app_function": "application.app",
+        "aws_region": "ap-south-1",
+        "profile_name": "default",
+        "project_name": "diamond-project",
+        "runtime": "python3.13",
+        "s3_bucket": "diamond-model-bucket"
+    }
+}
