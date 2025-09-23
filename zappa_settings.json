@@ -5,6 +5,7 @@
         "profile_name": "default",
         "project_name": "diamond-project",
         "runtime": "python3.13",
-        "s3_bucket": "diamond-model-bucket"
+        "s3_bucket": "diamond-model-bucket",
+        "role_name": "diamond-project-dev-ZappaLambdaExecutionRole"
     }
 }
