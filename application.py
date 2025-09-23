@@ -1,6 +1,21 @@
 from flask import Flask,request,render_template,jsonify
 from src.pipelines.prediction_pipeline import CustomData,PredictPipeline
+import boto3
+import pickle
+import os
 
+bucket_name = "diamond-model-bucket"
+model_file = "model.pkl"
+
+s3 = boto3.client('s3')
+
+# Download if not already present
+if not os.path.exists(model_file):
+    s3.download_file(bucket_name, model_file, model_file)
+
+# Load the model
+with open(model_file, "rb") as f:
+    model = pickle.load(f)
 
 application=Flask(__name__)
 
