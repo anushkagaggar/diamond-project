@@ -4,10 +4,11 @@
         "aws_region": "ap-south-1",
         "profile_name": "default",
         "project_name": "diamond-project",
-        "runtime": "python3.13",
+        "runtime": "python3.11",
         "s3_bucket": "diamond-model-bucket",
         "role_name": "diamond-project-dev-ZappaLambdaExecutionRole",
         "manage_roles": false,
-        "slim_handler": true
+        "slim_handler": true,
+        "use_precompiled_packages": true
     }
 }
